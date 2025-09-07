@@ -1,0 +1,80 @@
+/* src/styles/WeatherDisplay.css */
+.weather-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.city-name {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.weather-icon-container {
+  margin: 10px 0;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-main {
+  margin: 20px 0;
+}
+
+.temperature {
+  font-size: 48px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 20px;
+  color: #666;
+  text-transform: capitalize;
+}
+
+.weather-details {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.detail-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.detail-value {
+  color: #333;
+  font-weight: bold;
+}
